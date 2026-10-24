@@ -25,16 +25,15 @@ Technologies Used
 
 Project Structure
 
-my-bookshop/
-├── css/
-│   └── style.css
-├── image/
-├── js/
-│   └── script.js
-├── index.html
-├── pay.html
-├── success.html
-└── README.md
+The project is organised into the following files and folders.
+
+* css/ — Contains style.css, which manages the website’s layout, styling and responsive design.
+* image/ — Stores book covers, payment logos and other visual assets.
+* js/ — Contains script.js, which handles the shopping basket, form validation, session storage and payment API integration.
+* index.html — Main homepage displaying the book catalogue and shopping basket.
+* pay.html — Checkout page containing the order summary and payment form.
+* success.html — Confirmation page displayed after a successful payment response.
+* README.md — Project documentation, including features, technologies and setup instructions.
 
 How to Run
 
