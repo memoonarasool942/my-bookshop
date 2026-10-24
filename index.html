@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Makes the page responsive on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Bookshop</title>
+
+    <!-- External CSS file -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container">
+
+            <div class="brand-row">
+                <h1 class="site-title">My Bookshop</h1>
+
+                <!-- Mobile menu button -->
+                <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu">
+                    ☰
+                </button>
+            </div>
+
+            <!-- Navigation bar -->
+            <nav class="site-nav" id="siteNav">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="#" class="nav-link">About Us</a>
+                <a href="#" class="nav-link">Contact Us</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <main class="container">
+
+        <!-- Intro section -->
+        <section class="hero">
+
+            <div class="hero-text">
+                <h2>Discover your next favourite book</h2>
+
+                <p>
+                    Browse our collection and select one or more books
+                    before going to the payment page.
+                </p>
+            </div>
+
+            <!-- Basket summary -->
+            <div class="basket-summary">
+                <h3>Your Basket</h3>
+
+                <p id="selectedCount">0 books selected</p>
+                <p id="totalPrice">Total: £0.00</p>
+
+                <button id="goToPayBtn" class="primary-btn">
+                    Proceed to Payment
+                </button>
+            </div>
+
+        </section>
+
+        <!-- Book cards section -->
+        <section class="books-section">
+
+            <!-- Book 1 -->
+            <article class="book-card">
+                <img src="image/book1.jpg"
+                     alt="Atomic Habits book cover"
+                     class="book-image">
+
+                <div class="book-info">
+                    <h3>Atomic Habits</h3>
+                    <p class="author">James Clear</p>
+
+                    <p>
+                        A practical guide to building good habits,
+                        breaking bad ones and improving daily systems.
+                    </p>
+
+                    <p class="price">£12.99</p>
+
+                    <label class="select-book">
+                        <input
+                            type="checkbox"
+                            class="book-checkbox"
+                            data-title="Atomic Habits"
+                            data-price="12.99">
+
+                        Add to basket
+                    </label>
+                </div>
+            </article>
+
+            <!-- Book 2 -->
+            <article class="book-card">
+                <img src="image/book3.jpg"
+                     alt="The Alchemist book cover"
+                     class="book-image">
+
+                <div class="book-info">
+                    <h3>The Alchemist</h3>
+                    <p class="author">Paulo Coelho</p>
+
+                    <p>
+                        A well-known novel about dreams, purpose,
+                        and following your personal journey.
+                    </p>
+
+                    <p class="price">£9.99</p>
+
+                    <label class="select-book">
+                        <input
+                            type="checkbox"
+                            class="book-checkbox"
+                            data-title="The Alchemist"
+                            data-price="9.99">
+
+                        Add to basket
+                    </label>
+                </div>
+            </article>
+
+            <!-- Book 3 -->
+            <article class="book-card">
+                <img src="image/book2.jpg"
+                     alt="Deep Work book cover"
+                     class="book-image">
+
+                <div class="book-info">
+                    <h3>Deep Work</h3>
+                    <p class="author">Cal Newport</p>
+
+                    <p>
+                        This book explains how focused work and fewer
+                        distractions can improve productivity.
+                    </p>
+
+                    <p class="price">£11.50</p>
+
+                    <label class="select-book">
+                        <input
+                            type="checkbox"
+                            class="book-checkbox"
+                            data-title="Deep Work"
+                            data-price="11.50">
+
+                        Add to basket
+                    </label>
+                </div>
+            </article>
+
+            <!-- Book 4 -->
+            <article class="book-card">
+                <img src="image/book4.jpg"
+                     alt="The Psychology of Money book cover"
+                     class="book-image">
+
+                <div class="book-info">
+                    <h3>The Psychology of Money</h3>
+                    <p class="author">Morgan Housel</p>
+
+                    <p>
+                        A simple and interesting book about money,
+                        behaviour and financial decisions.
+                    </p>
+
+                    <p class="price">£10.75</p>
+
+                    <label class="select-book">
+                        <input
+                            type="checkbox"
+                            class="book-checkbox"
+                            data-title="The Psychology of Money"
+                            data-price="10.75">
+
+                        Add to basket
+                    </label>
+                </div>
+            </article>
+
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 My Bookshop. Student Web Development Project.</p>
+        </div>
+    </footer>
+
+    <!-- External JavaScript file -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>

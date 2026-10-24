@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header simple-header">
+    <div class="container simple-header-content">
+        <h1 class="site-title">My Bookshop</h1>
+
+        <!-- Main navigation links -->
+        <nav class="site-nav simple-nav">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="#" class="nav-link">About Us</a>
+            <a href="#" class="nav-link">Contact Us</a>
+        </nav>
+    </div>
+</header>
+
+<main class="container payment-example-page">
+
+    <!-- This section shows the books chosen on the homepage -->
+    <section class="order-summary example-order-summary">
+        <h2>Your Order</h2>
+        <ul id="orderList"></ul>
+        <p id="orderTotal"></p>
+    </section>
+
+    <!-- Payment form based on the layout shown in the assignment brief -->
+    <section class="payment-options">
+        <h2>Payment Options</h2>
+
+        <div class="payment-line"></div>
+
+        <div class="card-heading-row">
+            <p><strong>Debit / Credit Card</strong></p>
+
+            <div class="card-strip">
+                <img src="image/mastercard.png" alt="Mastercard">
+                <img src="image/visa.png" alt="Visa">
+                <img src="image/amex.png" alt="American Express">
+            </div>
+        </div>
+
+        <form id="paymentForm" class="classic-payment-form">
+
+            <div class="form-row">
+                <label for="cardNumber">Card Number</label>
+                <input type="text" id="cardNumber" required>
+            </div>
+
+            <div class="form-row">
+                <label for="expMonth">Expiration Date</label>
+
+                <select id="expMonth" required>
+                    <option value="">Month</option>
+                    <option value="1">01</option>
+                    <option value="2">02</option>
+                    <option value="3">03</option>
+                    <option value="4">04</option>
+                    <option value="5">05</option>
+                    <option value="6">06</option>
+                    <option value="7">07</option>
+                    <option value="8">08</option>
+                    <option value="9">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+
+                <select id="expYear" required>
+                    <option value="">Year</option>
+                    <option value="2026">2026</option>
+                    <option value="2027">2027</option>
+                    <option value="2028">2028</option>
+                    <option value="2029">2029</option>
+                    <option value="2030">2030</option>
+                    <option value="2031">2031</option>
+                </select>
+            </div>
+
+            <div class="form-row">
+                <label for="cvv">Security Code</label>
+                <input type="text" id="cvv" required>
+            </div>
+
+            <p class="cvv-note">(3-4 digit code normally on the back of your card)</p>
+
+            <button type="submit" class="continue-btn">Continue</button>
+
+            <!-- JavaScript uses this paragraph to show validation messages -->
+            <p id="paymentMessage"></p>
+
+        </form>
+    </section>
+
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <p>© 2026 My Bookshop</p>
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

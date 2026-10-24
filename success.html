@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Successful</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="success-header">
+    <div class="success-container">
+
+        <div class="success-title-row">
+            <img src="image/book1.jpg" alt="Bookshop logo" class="success-logo">
+            <h1>My Bookshop</h1>
+        </div>
+
+        <!-- Navigation bar -->
+        <nav class="success-nav">
+            <a href="index.html">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
+        </nav>
+
+    </div>
+</header>
+
+<main class="success-container">
+
+    <!-- Success message after valid payment -->
+    <p class="success-message">
+        You have successfully entered your credit card details
+    </p>
+
+    <hr>
+
+    <section class="success-card-row">
+        <strong>Debit / Credit Card</strong>
+
+        <img src="image/mastercard.png" alt="Mastercard" class="success-card-logo">
+
+        <!-- JavaScript adds the last 4 digits here -->
+        <p id="cardDisplay">
+            Your credit card number ends in **** **** ****
+        </p>
+    </section>
+
+    <div class="success-grey-box"></div>
+
+</main>
+
+<script>
+    // This gets the last 4 digits from sessionStorage and shows them on the page
+    document.addEventListener("DOMContentLoaded", function () {
+        const lastFour = sessionStorage.getItem("cardLastFour");
+
+        if (lastFour) {
+            document.getElementById("cardDisplay").textContent =
+                "Your credit card number ends in **** **** **** " + lastFour;
+        }
+    });
+</script>
+
+</body>
+</html>
