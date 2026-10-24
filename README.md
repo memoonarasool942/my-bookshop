@@ -63,3 +63,18 @@ Developing this project helped me strengthen my understanding of JavaScript prog
 I also gained practical experience working with JSON, browser storage and asynchronous API requests using the Fetch API.
 
 This project helped me understand how different components of a web application work together to provide an interactive user experience.
+## Website Screenshots
+
+The following screenshots demonstrate the main features and functionality of My Bookshop.
+
+### Website Interface
+![Website Interface](Screenshot%202026-10-24%20at%2017.40.20.png)
+
+### Shopping Basket
+![Shopping Basket](Screenshot%202026-10-24%20at%2017.40.32.png)
+
+### Checkout Page
+![Checkout Page](Screenshot%202026-10-24%20at%2017.40.45.png)
+
+### Additional Website Features
+![Additional Features](Screenshot%202026-10-24%20at%2017.40.51.png)
